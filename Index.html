@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="es"> 
+    <head>
+        <meta charset="utf-8" />
+        <title>Primer Pagina Web</title>
+
+        <Meta name="descripción" content="Esta es mi primer pagina web"/>
+        <Meta name="Autor" content="TP"/>
+        <Meta name="Buscar" content="Primer pagina web, Primer pagina"/> 
+         <link rel="stylesheet" href="Estilos.css">
+         <link rel="icon" href="Imagenes/Google icono.ico">
+    <head>
+
+    <body>
+        <div class="agrupar">
+            <header class="header">
+                <h1> Titulo Del Texto</h1>
+                <h2>Subtitulo Del Texto</h2>
+                </header>
+        
+                <nav class="menu">
+                   <button class="nav-boton" onclick="accion()">menu</button>
+                   <a href="#" class="nav-enlace desaparece">Inicio</a> 
+                   <a href="https://www.google.com/?hl=es" class="nav-enlace desaparece">Ver Mas</a>
+
+                   <button class="dar-pres presed" onmouseenter="pressed()" onmouseleave="pressed()">armar</button>
+
+                    <ul>
+                        <li>Principal</li>
+                        <li>Ayuda</li>
+                        <li>Contacto</li>
+                    </ul>
+                </nav>
+                <script>
+                    function accion(){
+                        console.log('esta funcinando boton');
+                        var ancla = document.getElementsByClassName('nav-enlace');
+                        for(var i = 0; i < ancla.length; i++){
+                        ancla[i].classList.toggle('desaparece');
+                        }
+                    }
+                    function pressed(){
+                        var pres = document.getElementsByClassName('dar-pres');
+                        for(var i = 0; i < pres.length; i++){
+                        pres[i].classList.toggle('presed');
+                    }
+                }           
+                              
+                </script>
+        
+                    <section class="textos">
+                        <article>
+                            <hgroup>
+                                <h4><P>Primer Parafo HTML</P></h4>
+                             <h2>Titulo Del Primer Articulo</h2>
+                             <h1>Subtitulo Del Primer Art</h1>
+                            </hgroup>                 
+                          <time datetime="23-8-2021">Publicado 23-8-2021</time>
+                          <p>Es un articulo de prueba 23/9/2021dsdadddfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfdsf
+                            asdasdasdasdasda <small>sdasdasdasdasdasfsdfdgf</small>
+                            dgfsdfsdfs<cite>dfsdfsadasd</cite>adasdasdasdasdasdfdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdf
+                            fdf<span>sdsadasdasdas</span>dasdasdasd
+                        </p>
+                            <img src="Imagenes/Google logo.png"/>
+                            <footer>
+                                <p>Comentarios(0)</p>
+                            </footer>
+                            <address>
+                            <a href="https://www.google.com/?hl=es">Visita Google</a>
+                        </address>                
+                        </article>
+        
+                        <article>
+                            <h1>Titulo Del Segundo Articulo</h1>
+                            <p>Es un articulo de prueba 23/9/2021  </p>
+                        </article>
+                    </section>
+        
+                    <aside>
+                      <blockquote cite="https://www.google.com/?hl=es">
+                     Mensaje 1
+                      </blockquote>
+                     
+                      <blockquote cite="https://www.google.com/?hl=es">
+                    Mensaje 2
+                      </blockquote>
+                    </aside>
+        
+                    <footer style="color: white; background: black;">
+                        Derechos Recervados 2010- 2018
+                    </footer>
+        </div>
+        
+     <body>
+
+</html>
+
+
